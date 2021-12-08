@@ -1,0 +1,48 @@
+.Quote {
+  padding: 1rem 1.6rem;
+  background-color: lightgrey;
+  border: 0.2rem solid grey;
+  border-radius: 0.4rem;
+  color: #282c34;
+}
+
+.Quote-content {
+  margin-inline: 0;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.Quote-author {
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+}
+
+.Quote-button-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Random-quote-button,
+.Previous-quote-button {
+  padding: 0.8rem 1rem;
+  margin: 0 2rem;
+  color: #282c34;
+  background-color: lightgrey;
+  border: 0.2rem solid grey;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: color 0.15s, background-color 0.15s, border 0.15s;
+  -webkit-transition: color 0.15s, background-color 0.15s, border 0.15s;
+  -moz-transition: color 0.15s, background-color 0.15s, border 0.15s;
+  -ms-transition: color 0.15s, background-color 0.15s, border 0.15s;
+  -o-transition: color 0.15s, background-color 0.15s, border 0.15s;
+}
+
+.Random-quote-button:hover,
+.Previous-quote-button:hover {
+  color: #61dafb;
+  background-color: #282c34;
+  border: 0.2rem solid #61dafb;
+}
