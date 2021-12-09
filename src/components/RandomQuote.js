@@ -1,11 +1,6 @@
 import React from 'react'
 
-const RandomQuote = ({ quoteList, setRandomQuote }) => {
-  // generates random value and assigns to state
-  const drawRandomQuote = () => {
-    setRandomQuote(quoteList[Math.floor(Math.random() * quoteList.length)])
-  }
-
+const RandomQuote = ({ drawRandomQuote }) => {
   // jsx
   return (
     <button className="Random-quote-button" onClick={drawRandomQuote}>

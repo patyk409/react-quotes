@@ -1,20 +1,6 @@
-import React, { useRef, useEffect } from 'react'
+import React from 'react'
 
-const PreviousQuote = ({ randomQuote, setRandomQuote }) => {
-  // previous state reference
-  const prevQuoteRef = useRef()
-
-  // keeps the current state and assigns it to reference
-  useEffect(() => {
-    prevQuoteRef.current = randomQuote
-  })
-  const prevQuote = prevQuoteRef.current
-
-  // assigns previous state value to random quote state
-  const getPreviousQuote = () => {
-    setRandomQuote(prevQuote)
-  }
-
+const PreviousQuote = ({ getPreviousQuote }) => {
   // jsx
   return (
     <button className="Previous-quote-button" onClick={getPreviousQuote}>
